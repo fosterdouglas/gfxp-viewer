@@ -1,6 +1,6 @@
 # GFXP-Viewer
 
- - - -Description soon- - -
+<<< Description soon >>>
 
 Full credit for the original [GFXP](https://github.com/ivansergeev/gfxp) tool goes to Ivan Sergeev. This is simply a convenience viewer tool.
 
