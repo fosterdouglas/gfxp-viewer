@@ -4,3 +4,5 @@ description=A simple Playdate viewer for the GFXP library.
 bundleID=com.FosterDouglas.gfxp-viewer
 buildNumber=6
 version=1.0.0
+pdxversion=11000
+buildtime=707383359

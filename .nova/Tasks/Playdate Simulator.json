@@ -1,0 +1,18 @@
+{
+  "actions" : {
+    "build" : {
+      "preActions" : [
+        {
+          "name" : "Increase buildNumber",
+          "script" : "#!\/bin\/sh\n\nsed -i \"\" \"\/buildNumber=[^0-9]\/ d\n:d\n5s\/9\\(_*\\)$\/_\\1\/\ntd\n5s\/^\\(_*\\)$\/1\\1\/; tn\n5s\/8\\(_*\\)$\/9\\1\/; tn\n5s\/7\\(_*\\)$\/8\\1\/; tn\n5s\/6\\(_*\\)$\/7\\1\/; tn\n5s\/5\\(_*\\)$\/6\\1\/; tn\n5s\/4\\(_*\\)$\/5\\1\/; tn\n5s\/3\\(_*\\)$\/4\\1\/; tn\n5s\/2\\(_*\\)$\/3\\1\/; tn\n5s\/1\\(_*\\)$\/2\\1\/; tn\n5s\/0\\(_*\\)$\/1\\1\/; tn\n:n\ny\/_\/0\/\" Source\/pdxinfo",
+          "type" : "runScript"
+        }
+      ]
+    }
+  },
+  "extension" : {
+    "identifier" : "com.panic.Playdate",
+    "name" : "Playdate"
+  },
+  "extensionTemplate" : "simulator"
+}
