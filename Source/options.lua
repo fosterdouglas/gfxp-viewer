@@ -1,3 +1,5 @@
+-- Using this list to control the order in which the options are displayed
+
 menuOptions = {
 	 'white',
 	 'black',
