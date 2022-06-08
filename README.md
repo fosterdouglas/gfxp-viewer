@@ -4,7 +4,7 @@
 ![launcherImage](Source/system/images/other/2.gif)
 
 ### About
-GFXP Viewer is a fork of [GFXP](https://github.com/ivansergeev/gfxp), and is used to view a large selection of dither styles directly on the Playdate device. Get the .PDX directly [GFXP-Viewer.pdx.zip](https://github.com/fosterdouglas/gfxp-viewer/releases/download/v2.0-viewer/GFXP-Viewer.pdx.zip) and sideload it to your Playdate, or clone this repo and run the project yourself. :)
+GFXP Viewer is a fork of [GFXP](https://github.com/ivansergeev/gfxp), and is used to view a large selection of dither styles directly on the Playdate device. Get the .PDX directly ([GFXP-Viewer.pdx.zip](https://github.com/fosterdouglas/gfxp-viewer/releases/download/v2.0-viewer/GFXP-Viewer.pdx.zip)) and sideload it to your Playdate, or clone this repo and run the project yourself. :)
 
 ### Controls
 
