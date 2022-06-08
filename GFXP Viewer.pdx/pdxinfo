@@ -1,9 +1,0 @@
-name=GFXP Viewer
-author=Foster Douglas
-description=A simple Playdate pattern viewer, using the GFXP library originally created by Ivan Sergeev.
-bundleID=com.FosterDouglas.gfxp-viewer
-buildNumber=1283
-imagePath=system/images
-version=1.0.0
-pdxversion=11000
-buildtime=707978393
