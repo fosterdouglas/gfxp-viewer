@@ -1,3 +1,6 @@
+-- -- -- -- PLAYDATE.STORE UUID -- -- -- -- 
+print('app.uuid=f5fc580ddef34127b448d6bb20db88fc')
+
 -- -- -- -- CORELIBS -- -- -- -- 
 import 'CoreLibs/graphics'
 import 'CoreLibs/object'
@@ -107,7 +110,12 @@ function listView:drawCell(section, row, column, selected, x, y, width, height)
 	gfx.fillRect(x, y, width, rowHeight)
 	
 	if listViewDisplay then
-		gfx.drawTextInRect(menuOptions[row], x, y, width, height, nil, "...", kTextAlignment.center)
+		local text = menuOptions[row]
+		if patternInverted then
+			text = menuOptions[row] .. 'i'
+		end
+			
+		gfx.drawTextInRect(text, x, y, width, height, nil, "...", kTextAlignment.center)
 	end
 end
 
@@ -186,7 +194,7 @@ function drawInfoText()
 	gfx.drawText("Ⓑ", displayWidth - shapeTextWidth - 25, 2)
 	gfx.drawText(colorTypes[(colorIndex + 1)], displayWidth - colorTextWidth - 3, 222)
 	gfx.drawText("Ⓐ", displayWidth - colorTextWidth - 25, 220)
-		
+	
 	if controlsColorInverted then
 		gfx.setImageDrawMode(gfx.kDrawModeWhiteTransparent)
 	else
@@ -207,6 +215,7 @@ function drawInfoText()
 	end
 	gfx.drawRect(displayWidth - shapeTextWidth - 27, 0, shapeTextWidth + 30, 22)
 	gfx.drawRect(displayWidth - colorTextWidth - 27, 218, colorTextWidth + 31, 22)
+	gfx.drawRect(0, 218, 22, 22)
 end
 
 function drawListBackground()
